@@ -122,6 +122,17 @@ h1 {
   width: 30%;
   float: left;
   margin-right: 25px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  z-index: 5;
+  border: 2px solid black;
+}
+
+.nagyvarad img:hover {
+  width: 100%;
+
 }
 
 .latnivalok-button {
