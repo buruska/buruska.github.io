@@ -118,7 +118,7 @@ h1 {
 }
 
 
-.nagyvarad img{
+img{
   width: 30%;
   float: left;
   margin-right: 25px;
@@ -130,7 +130,7 @@ h1 {
   border: 2px solid black;
 }
 
-.nagyvarad img:hover {
+img:hover {
   width: 100%;
 
 }
