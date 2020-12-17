@@ -1,0 +1,227 @@
+.container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: rgb(133,18,23);
+}
+
+.utvonalak-button {
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #851217;
+  text-align: left;
+  color: #FFF;
+  transition: background 0.2s;
+  font-size: 1.5em;
+}
+
+.utvonalak-button::after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+
+.utvonalak-button--active + .utvonalak-content {
+  display: block;
+}
+
+.utvonalak-button--active {
+  background: rgba(133,18,23,0.7);
+}
+
+.utvonalak-button--active::after {
+  content: '\25b4';
+}
+
+.utvonalak-content {
+  padding: 0 15px;
+  display: none;
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+.terkepek h1 {
+  margin-top: 35px;
+}
+
+.terkepek h2 {
+  display: inline-block;
+}
+
+.terkepek h2 a {
+  background-color: rgb(133,18,23);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 7px;
+  transition: background 0.2s;
+}
+
+.terkepek h2 a:hover {
+  background: rgba(133,18,23,0.7);
+}
+
+.telepulesek-button {
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgba(133,18,23,0.5);
+  text-align: left;
+  transition: background 0.2s;
+  font-size: 1.3em;
+}
+
+.telepulesek-button::after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+
+.telepulesek-button--active + .telepulesek-content {
+  display: block;
+}
+
+.telepulesek-button--active {
+  background: rgba(133,18,23,0.3);
+}
+
+.telepulesek-button--active::after {
+  content: '\25b4';
+}
+
+.telepulesek-content {
+  padding: 0 15px;
+  display: none;
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+
+.telepulesek-content h3 {
+  color: rgb(133,18,23);
+  padding: 10px;
+  margin: 7px;
+  font-size: 2em;
+}
+
+
+.nagyvarad img{
+  width: 30%;
+  float: left;
+  margin-right: 25px;
+}
+
+.latnivalok-button {
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #777;
+  text-align: left;
+  transition: background 0.2s;
+  font-size: 1.3em;
+}
+
+.latnivalok-button::after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+
+.latnivalok-button--active + .latnivalok-content {
+  display: block;
+}
+
+.latnivalok-button--active {
+  background: #AAA;
+}
+
+.latnivalok-button--active::after {
+  content: '\25b4';
+}
+
+.latnivalok-content {
+  padding: 0 15px;
+  display: none;
+  overflow: auto;
+  background-color: #CCC;
+  margin-bottom: 15px;
+}
+
+.latnivalok-content h5 {
+  text-align: right;
+  color: #555;
+}
+
+
+.latnivalok-content a {
+  background-color: rgb(133,18,23);
+  color: white;
+  text-decoration: none;
+  margin: 7px;
+  padding: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 0.2s;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+.latnivalok-content a:hover {
+  background: rgba(133,18,23,0.7);
+}
+
+.turisztika-button {
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgba(133,18,23,0.3);
+  text-align: left;
+  transition: background 0.2s;
+  font-size: 1.3em;
+}
+
+.turisztika-button::after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+
+.turisztika-button--active + .turisztika-content {
+  display: block;
+}
+
+.turisztika-button--active {
+  background: rgba(133,18,23,0.2);
+}
+
+.turisztika-button--active::after {
+  content: '\25b4';
+}
+
+.turisztika-content {
+  padding: 0 15px;
+  display: none;
+  overflow: auto;
+}
