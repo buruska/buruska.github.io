@@ -9,6 +9,14 @@ h1 {
   color: rgb(133,18,23);
 }
 
+p {
+  text-align: justify;
+}
+h4.clear {
+  clear: both;
+  padding-top: 15px;
+}
+
 .utvonalak-button {
   margin-bottom: 3px;
   display: block;
