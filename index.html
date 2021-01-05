@@ -11,20 +11,31 @@
 
     <!-- Scripts -->
 
-
-
 </head>
 
 <body>
 
   <div class="container">
 		<h1>Panoráma útikönyv</h1>
+		<input type="text" placeholder="Turisztikai célpontok, látnivalók, turisztikai irodák keresésése" class="search-input">
+		<div class="suggestions">
+		</div>
 		<div class="utvonalak">
-			<button type="button" name="button" class="utvonalak-button">I. Nagyvárad–Brassó</button>
+			<button type="button" name="button" class="utvonalak-button" id="about">Az adatbankról</button>
 			<div class="utvonalak-content">
-				<button type="button" name="button" class="telepulesek-button">Nagyvárad</button>
-				<div class="telepulesek-content nagyvarad">
-					<img src="resources/img/001Nagyvarad.jpg" alt="Nagyvárad térképe">
+				<h1>Utazások Erdélyben</h1>
+				<p>Az Utazások Erdélyben online turisztikai útvonalajánló Dr. Mátyás Vilmos hasonló cím alatt megjelent útikönyve alapján készült. Mivel a kötet utolsó, 1990-es kiadása óta eltelt több mint harminc év alatt úgy Erdély, mint az erdélyi műemlékek megjelenítése is jelentősen változott, az online adatbázisban szereplő adatok egyrésze – elsősorban a műemlékek leírása – kiegészült az adott műemlékről bővebb információkkal, képanyaggal szolgáló oldalakhoz vezető linkekkel, ugyanakkor elmaradtak olyan információk, amelyek már elveszítették aktualitásukat, és helyettesítésükre az adatbázis keretében nem vállalkozhattunk. Ilyenek a különböző településeken levő szálláshelyekre vonatkozó adatok, amelyeket más e célból létrehozott és működtetett weboldalakon gond nélkül megszerezhet az érdeklődő.</p>
+				<p>Az elmúlt harminc év alatt az útikönyvben szereplő térképeken megjelenő információ is sok esetben elavult. Mivel a térképek online megjelenítését fontosnak tartottuk, a megváltozott utcaneveket az egyes térképek alatt feltüntettük.</p>
+				<p>Az útikönyv ötödik kiadásának elektronikus változata a Kiadványok/Könyvek/Más könyvek menüpont alatt érhető el adatbázisunkban.</p>
+				<p>Az adatok aktualizálása Lőrincz Lili és Simó Helga munkája, a projekt koordinátora Györgyjakab Izabella.</p>
+			</div>
+		</div>
+		<div class="utvonalak">
+			<button type="button" name="button" class="utvonalak-button" id="nagyvaradbrasso">I. Nagyvárad–Brassó</button>
+			<div class="utvonalak-content">
+				<button type="button" name="button" class="telepulesek-button"  id="nagyvarad">Nagyvárad</button>
+				<div class="telepulesek-content">
+					<img src="resources/img/001Nagyvarad.jpg" alt="Nagyvárad térképe" >
 					<p>Nagyvárad Bihar megye (județul Bihor) székhelye, „Erdély kapuja”, a Sebes-Körös két partján a Réz-hegységtől idáig húzódó dombvonulatok alján, 126 m magasságban fekszik. Lakosainak száma 196 000.</p>
 					<p>A várost a püspökséggel együtt 1093-ban I. László király alapította, s ő volt az első magyar király, akit a várban emelt székesegyházba temettek el. Janus Pannonius váradi kanonok le is írta a király márvány síremlékét.</p>
 					<p>Váradot először a mongolok pusztították el (1241–42), az Anjouk alatt azonban ismét felvirágzott. Az alapító király életnagyságú lovas bronzszobrát, Kolozsvári Márton és György szobrászok remekművét 1390-ben, Zsigmond jelenlétében avatták fel. A Kolozsvári testvérek készítették István, László és Imre gyalogszobrát is.</p>
@@ -295,7 +306,7 @@
 							<p>Rény község 1753-as fatemplomát érdemes megtekinteni.</p>
 						</div>
 					</div>
-					<button type="button" name="button" class="turisztika-button">Turiszikai irodák</button>
+					<button type="button" name="button" class="turisztika-button" id="nagyvaradturisztika">Turiszikai irodák</button>
 					<div class="turisztika-content">
 						<button type="button" name="button" class="latnivalok-button">Turisztikai információs központ</button>
 						<div class="latnivalok-content">
@@ -2434,11 +2445,11 @@
 						</div>
 						<button type="button" name="button" class="latnivalok-button">212. A dési reformatus templom</button>
 						<div class="latnivalok-content">
-							<!--<h5></h5>
-							<p></p>
-							<p></p>
-							<h4>Bővebben lásd:</h4>
-							<a href="" target="_blank"></a>-->
+							<p>A dési reformatus templom (Piața Bobâlna) a város legértékesebb műemléke.</p>
+							<p>A XV. század második felében épült, gótikus stílusban. Második boltozata az 1510-es évek alkotása. Erődítése is megtörtént. 1551-ben Martinuzzi György javította. Utolsó katolikus plébánosa, Litterati György 1554-ben halt meg. A templom előbb az unitáriusoké, majd a XVIII. században a reformátusoké lett.</p>
+							<p>Mennyezetét 1642-ben egy villámcsapás pusztította el, 1706-ban Tiege császári tábornok martalócai dúlták fel belsejét. 1711-ben kezdődött utolsó újjáépítése. Az 1880 táján végzett renoválás során régi várfalát sajnos lebontották, s új, jellegtelen fallal vették körül.</p>
+							<p> A templom három fő részből áll. A tágas hajóhoz nyugatról a négyszögletes torony, keletről a szentély csatlakozik. A torony 72 m magas, a földszintje teljesen áttört, tulajdonképpen négy pilléren áll. Hegyes toronysisakja és négy fiatornya van. A déli oldal ablakai és kapuzata mérműves mestermunkák.</p>
+							<p> A hosszú szentély ferences hatásra vall. Ez különben a templom legősibb része, noha boltozata 1776–79 között készült. A sok átépítés miatt a templom tengelye nem egyenes. Fejezet nélküli pilléreinek lábazata késő gótikus, s mellettük erősítésül faloszlopok állnak. Igen szép az emeletes sekrestye felső szintjének hálóboltozata is. A karzat kék alapon piros-fehér reneszánsz virágmintáit Umling Lőrinc festette. Alatta régi gótikus karzatmaradványok láthatók XV. század végi lóhereíves kőfaragással. A gyönyörű szószéket Sipos Dávid faragta 1752-ben. Koronája 1779-ből való.</p>
 						</div>
 						<button type="button" name="button" class="latnivalok-button">213. A fejedelmek egykori szállásháza – Dés</button>
 						<div class="latnivalok-content">
@@ -6139,7 +6150,7 @@
   </div>
 
 	<script src="resources/js/style.js"></script>
-
+	<script src="./resources/js/search.js"></script>
 </body>
 
 </html>
