@@ -3,9 +3,9 @@
 
 const countries = [
   {name: 'nagyvárad', link: '<a href="#nagyvarad" target="_blank">Nagyvárad</a>'},
-  {name: 'India', link: '<a href="https://www.facebook.com/" target="_blank">India</a>'},
+  /*{name: 'India', link: '<a href="https://www.facebook.com/" target="_blank">India</a>'},
   {name: 'Argentina', link: '<a href="https://www.facebook.com/" target="_blank">Argentina</a>'},
-  {name: 'Armenia', link: '<a href="https://www.facebook.com/" target="_blank">Armenia</a>'}
+  {name: 'Armenia', link: '<a href="https://www.facebook.com/" target="_blank">Armenia</a>'}*/
 ];
 
 const searchInput = document.querySelector('.search-input');
