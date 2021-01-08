@@ -9,6 +9,16 @@ h1 {
   color: rgb(133,18,23);
 }
 
+.szerzok {
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+#gyaszkeret {
+  border: 2px solid black;
+  padding: 1px;
+}
+
 .container input {
   background: transparent;
   border: 0;
