@@ -1,9 +1,33 @@
 body {
   background-color: grey;
+  font-family: sans-serif;
 }
 
 .container {
   width: 80%;
   background-color: white;
   margin: 0 auto;
+
+}
+
+.content {
+  overflow: scroll;
+  height: 600px;
+}
+
+h1 {
+padding: 2%;
+}
+
+input {
+  width: 99%;
+  margin: 1% auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+
+p {
+  border-top: 1px solid black;
+  padding: 15px;
 }
