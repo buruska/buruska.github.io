@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 
         if (adat.muvek !== '') {
-          kiirni += '<br>-' + adat.muvek + '. ';
+          kiirni += '<br>- ' + adat.muvek + '. ';
         }
 
         if(adat.megjegyzes !== '') {
