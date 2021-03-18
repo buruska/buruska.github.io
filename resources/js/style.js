@@ -57,7 +57,7 @@ $(document).ready(function() {
           kiirni += adat.szerzo + ': ';
         }
 
-        kiirni += adat.cim + '. </strong> Új Élet, ';
+        kiirni += adat.cim + '. </strong>';
 
         kiirni += adat.teljesadatok + ', ';
 

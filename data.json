@@ -3,6 +3,7 @@
       {
         "id": 1,
         "kod": "UE00001",
+        "szerzo": "***",
         "cim": "cím nélkül",
         "rovat": "Művészet kis hírei",
         "mufaj": "hír",
@@ -12,6 +13,7 @@
       {
         "id": 2,
         "kod": "UE00002",
+        "szerzo": "***",
         "cim": "Honthy Anna",
         "rovat": "Főlaptest",
         "mufaj": "biográfia",
