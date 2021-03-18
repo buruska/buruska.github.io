@@ -51,7 +51,7 @@ $(document).ready(function() {
         //document.write(adat.id + ' ' + adat.kod + ' <strong>' + adat.szerzo + ': ' + adat.cim + '</strong> ' + adat.rovat + ' ' + adat.mufaj + ' ' + adat.oldalszam + ' ' + adat.muvek + ' ' + adat.megjegyzes + ' ' + adat.teljesadatok + '<br>');
         adatok.push(adat);
 
-        let kiirni = '<strong>';
+        let kiirni = adat.id + '. <strong>';
 
         if (adat.szerzo !== '') {
           kiirni += adat.szerzo + ': ';
@@ -59,23 +59,28 @@ $(document).ready(function() {
 
         kiirni += adat.cim + '. </strong>';
 
+
         if (adat.rovat !== '') {
           kiirni += adat.rovat + ', ';
         }
 
-        kiirni += adat.mufaj + ', ';
+        kiirni += adat.teljesadatok + ', ';
 
-        kiirni += adat.oldalszam + '. ';
+        kiirni += adat.oldalszam + '. oldal, ';
+
+        kiirni += adat.mufaj;
+
+
 
         if (adat.muvek !== '') {
-          kiirni += '<br>-' + adat.rovat + '. ';
+          kiirni += '<br>-' + adat.muvek + '. ';
         }
 
         if(adat.megjegyzes !== '') {
-          kiirni += adat.megjegyzes  + ' ';
+          kiirni += ', ' + adat.megjegyzes  + ' ';
         }
 
-        kiirni += adat.teljesadatok;
+        //kiirni += adat.teljesadatok;
 
         adat.kiirni = kiirni;
 
