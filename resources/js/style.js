@@ -51,7 +51,7 @@ $(document).ready(function() {
         //document.write(adat.id + ' ' + adat.kod + ' <strong>' + adat.szerzo + ': ' + adat.cim + '</strong> ' + adat.rovat + ' ' + adat.mufaj + ' ' + adat.oldalszam + ' ' + adat.muvek + ' ' + adat.megjegyzes + ' ' + adat.teljesadatok + '<br>');
         adatok.push(adat);
 
-        let kiirni = adat.id + '. <strong>';
+        let kiirni = '<strong>';
 
         if (adat.szerzo !== '') {
           kiirni += adat.szerzo + ': ';
