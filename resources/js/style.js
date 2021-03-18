@@ -59,14 +59,15 @@ $(document).ready(function() {
 
         kiirni += adat.cim + '. </strong>';
 
+        kiirni += adat.teljesadatok + ', ';
+
+        kiirni += adat.oldalszam + '. oldal, ';
 
         if (adat.rovat !== '') {
           kiirni += adat.rovat + ', ';
         }
 
-        kiirni += adat.teljesadatok + ', ';
 
-        kiirni += adat.oldalszam + '. oldal, ';
 
         kiirni += adat.mufaj;
 
