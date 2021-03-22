@@ -1,5 +1,72 @@
 $(document).ready(function() {
-  fetch('data.json')
+
+  const dataList = document.getElementById('dataList');
+  let ujEletDatas = [];
+
+
+  const loadDatas = async () => {
+      try {
+          const res = await fetch('data.json');
+          ujEletDatas = await res.json();
+          displayDatas(ujEletDatas);
+      } catch (err) {
+          console.error(err);
+      }
+  };
+
+
+  const displayDatas = (datas) => {
+      const htmlString = datas
+          .map((data) => {
+
+            data.kiirni = '<strong>';
+
+            if(data.szerzo != undefined) {
+              data.kiirni += data.szerzo.trim();
+            }
+
+            if(data.cim != undefined) {
+              data.kiirni += ': ' + data.cim + '</strong> ';
+            }
+
+            if(data.teljesadatok != undefined) {
+              data.kiirni += data.teljesadatok.trim() + ', ';
+            }
+
+            if(data.oldalszam != undefined) {
+              data.kiirni += data.oldalszam + '. oldal, ';
+            }
+
+            if((data.rovat != undefined) && (data.rovat != '')) {
+              data.kiirni += data.rovat + ', ';
+            }
+
+            if(data.mufaj != undefined) {
+              data.kiirni += data.mufaj;
+            }
+
+            if((data.muvek != undefined) && (data.muvek != '')) {
+              data.kiirni += '<br>- ' + data.muvek + '. ';
+            }
+            if((data.megjegyzes != undefined) && (data.megjegyzes != '')) {
+              data.kiirni += ', ' + data.megjegyzes;
+            }
+
+
+              return `
+              <li class="data">
+                  <p>${data.kiirni}</p>
+
+              </li>
+          `;
+          })
+          .join('');
+      dataList.innerHTML = htmlString;
+  };
+
+  loadDatas();
+
+/*  fetch('data.json')
     .then(response => response.json())
     .then(data => {
       let adatok = [];
@@ -96,7 +163,7 @@ $(document).ready(function() {
         div[0].append(p);
       }
 
-    })
+    })*/
 
 
 });
