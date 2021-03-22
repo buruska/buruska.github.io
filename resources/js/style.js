@@ -1,8 +1,17 @@
 $(document).ready(function() {
 
   const dataList = document.getElementById('dataList');
+  const searchBar = document.getElementById('searchBar');
   let ujEletDatas = [];
 
+
+  searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase();
+    const szukitettDatas = ujEletDatas.filter( data => {
+      return data.kiirni.toLowerCase().includes(searchString);
+    });
+    displayDatas(szukitettDatas);
+  });
 
   const loadDatas = async () => {
       try {
