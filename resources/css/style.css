@@ -1,11 +1,11 @@
 body {
-  background-color: grey;
+  background-color: #9F6C77;
   font-family: sans-serif;
 }
 
 .container {
   width: 80%;
-  background-color: white;
+  //background-color: white;
   margin: 0 auto;
 
 }
@@ -13,17 +13,53 @@ body {
 #dataList {
   overflow: scroll;
   height: 400px;
+  background-color: white;
+  overflow-x: hidden;
+  border-radius: 3px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5F4047;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #130C0E;
 }
 
 h1 {
-padding: 2%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 3px;
+  color: #9F6C77;
 }
 
 input {
-  width: 99%;
+  width: 98.5%;
   margin: 1% auto;
   display: block;
-  margin-bottom: 50px;
+  border: none;
+  padding: 10px;
+  font-size: 1.5em;
+  border-radius: 3px;
+}
+
+::placeholder {
+  color: lightgrey;
 }
 
 
@@ -33,6 +69,8 @@ p {
 }
 
 .szerzok {
-  margin-left: 5%;
-  margin-bottom: 5%;
+  background-color: white;
+  color: gray;
+  padding: 15px;
+  border-radius: 3px;
 }
