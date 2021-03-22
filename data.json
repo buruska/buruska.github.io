@@ -6199,6 +6199,8 @@
       {
         "id": 605,
         "kod": "UE00605",
+        "szerzo": "[hiányzó adat]",
+        "cim": "[hiányzó adat]",
         "rovat": "Főlaptest",
         "oldalszam": "15-16",
         "megjegyzes": "hiányos lapszám (15-16)",
@@ -29289,6 +29291,7 @@
       {
         "id": 2903,
         "kod": "UE02903",
+        "szerzo": "***",
         "cim": "Zaharia Stancu 60 éves",
         "rovat": "Nagyvilág",
         "mufaj": "köszöntő",
@@ -30871,6 +30874,7 @@
       {
         "id": 3051,
         "kod": "UE03051",
+        "szerzo": "***",
         "cim": "Bled után Prága?",
         "rovat": "Sport",
         "mufaj": "cikk",
@@ -35190,6 +35194,7 @@
       {
         "id": 3457,
         "kod": "UE03457",
+        "szerzo": "***",
         "cim": "[cím nélkül]",
         "rovat": "Új filmek",
         "mufaj": "hír",
@@ -44541,6 +44546,7 @@
     {
       "id": 4338,
       "kod": "UE04338",
+      "szerzo": "***",
       "cim": "Divat",
       "rovat": "Főlaptest",
       "mufaj": "cikk",
@@ -44987,6 +44993,7 @@
     {
       "id": 4380,
       "kod": "UE04380",
+      "szerzo": "***",
       "cim": "[cím nélkül]",
       "rovat": "Szerkesztői üzenetek",
       "mufaj": "levél",
@@ -45083,6 +45090,7 @@
     {
       "id": 4389,
       "kod": "UE04389",
+      "szerzo": "***",
       "cim": "A vita eldőlt",
       "rovat": "Főlaptest",
       "mufaj": "beszámoló",
@@ -49618,6 +49626,7 @@
     {
       "id": 4815,
       "kod": "UE04815",
+      "szerzo": "***",
       "cim": "Ion Ţuculescu gyűjteményes kiállításának anyagából",
       "rovat": "Főlaptest",
       "mufaj": "kiállítás ismertető",
@@ -53357,6 +53366,7 @@
     {
       "id": 5165,
       "kod": "UE05165",
+      "szerzo": "***",
       "cim": "Románia Szocialista Köztársaság párt- és kormányküldöttségének látogatása a Szovjetúnióban",
       "rovat": "Főlaptest",
       "mufaj": "cikk",
@@ -53742,6 +53752,7 @@
     {
       "id": 5201,
       "kod": "UE05201",
+      "szerzo": "***",
       "cim": "Románia Szocialista Köztársaság párt- és kormányküldöttségének látogatása a Bolgár Népköztársaságban",
       "rovat": "Főlaptest",
       "mufaj": "cikk",
@@ -56090,6 +56101,7 @@
     {
       "id": 5420,
       "kod": "UE05420",
+      "szerzo": "***",
       "cim": "Nicolae Ceaușescu elvtársnak az RKP KB főtitkárának újévi beszéde a rádióban és a televízióban",
       "rovat": "Főlaptest",
       "mufaj": "beszéd",
@@ -56718,6 +56730,7 @@
     {
       "id": 5479,
       "kod": "UE05479",
+      "szerzo": "***",
       "cim": "Beszélgetés Vasile Dumával, a medgyesi vegyipari kutatóintézet tanulmányi igazgatójával",
       "rovat": "Főlaptest",
       "mufaj": "interjú",
