@@ -71,6 +71,38 @@ p {
 .szerzok {
   background-color: white;
   color: gray;
-  padding: 15px;
+  padding-left: 15px;
   border-radius: 3px;
+}
+
+.szerzok h2, h3 {
+  display: inline-block;
+}
+
+
+
+.szukites a {
+  background-color: #9F6C77;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.szukites a:hover {
+  background-color: #A74D4D;
+}
+
+.szukites {
+  background-color: white;
+  color: #9F6C77;
+  padding-left: 15px;
+  border-radius: 3px;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.szukites h4 {
+  display: inline-block;
+  margin-right: 25px;
 }
