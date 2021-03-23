@@ -131,13 +131,90 @@ $(document).ready(function() {
 
   szerzoA.addEventListener('click', (e) => {
     const szukitettDatas = ujEletDatas.filter( data => {
-      return data.kiirni.toLowerCase().includes('<strong>a');
+      return data.kiirni.includes('UE02223') + data.kiirni.includes('UE03088')
+       + data.kiirni.includes('UE00667') + data.kiirni.includes('UE04759')
+       + data.kiirni.includes('UE04762') + data.kiirni.includes('UE03728')
+       + data.kiirni.includes('UE00622') + data.kiirni.includes('UE02348')
+       + data.kiirni.includes('UE00345') + data.kiirni.includes('UE03568')
+       + data.kiirni.includes('UE00467') + data.kiirni.includes('UE00595')
+       + data.kiirni.includes('UE00851') + data.kiirni.includes('UE01181')
+       + data.kiirni.includes('UE01558') + data.kiirni.includes('UE01685')
+       + data.kiirni.includes('UE01724') + data.kiirni.includes('UE01798')
+       + data.kiirni.includes('UE01866') + data.kiirni.includes('UE01927')
+       + data.kiirni.includes('UE01964') + data.kiirni.includes('UE02026')
+       + data.kiirni.includes('UE02214') + data.kiirni.includes('UE02225')
+       + data.kiirni.includes('UE02819') + data.kiirni.includes('UE02820')
+       + data.kiirni.includes('UE03478') + data.kiirni.includes('UE04408')
+       + data.kiirni.includes('UE04544') + data.kiirni.includes('UE04560')
+       + data.kiirni.includes('UE00198') + data.kiirni.includes('UE01555')
+       + data.kiirni.includes('UE01897') + data.kiirni.includes('UE03081')
+       + data.kiirni.includes('UE07527') + data.kiirni.includes('UE07785')
+       + data.kiirni.includes('UE00100') + data.kiirni.includes('UE00450')
+       + data.kiirni.includes('UE02529') + data.kiirni.includes('UE04331')
+       + data.kiirni.includes('UE02812') + data.kiirni.includes('UE04883')
+       + data.kiirni.includes('UE04962') + data.kiirni.includes('UE01131')
+       + data.kiirni.includes('UE01410') + data.kiirni.includes('UE03091')
+       + data.kiirni.includes('UE04230') + data.kiirni.includes('UE02052')
+       + data.kiirni.includes('UE04869') + data.kiirni.includes('UE05425')
+       + data.kiirni.includes('UE02813') + data.kiirni.includes('UE02297')
+       + data.kiirni.includes('UE02332') + data.kiirni.includes('UE02364')
+       + data.kiirni.includes('UE00349') + data.kiirni.includes('UE05920')
+       + data.kiirni.includes('UE03266') + data.kiirni.includes('UE04657')
+       + data.kiirni.includes('UE05184') + data.kiirni.includes('UE05718')
+       + data.kiirni.includes('UE05775') + data.kiirni.includes('UE05776')
+       + data.kiirni.includes('UE06169') + data.kiirni.includes('UE07002')
+       + data.kiirni.includes('UE07105') + data.kiirni.includes('UE07748')
+       + data.kiirni.includes('UE05515') + data.kiirni.includes('UE06837')
+       + data.kiirni.includes('UE07670') + data.kiirni.includes('UE07725')
+       + data.kiirni.includes('UE07795') + data.kiirni.includes('UE07969')
+       + data.kiirni.includes('UE07955') + data.kiirni.includes('UE00502')
+       + data.kiirni.includes('UE06368') + data.kiirni.includes('UE05586')
+       + data.kiirni.includes('UE05587') + data.kiirni.includes('UE00584')
+       + data.kiirni.includes('UE07873') + data.kiirni.includes('UE07400')
+       + data.kiirni.includes('UE07461') + data.kiirni.includes('UE08304')
+       + data.kiirni.includes('UE00600') + data.kiirni.includes('UE05037')
+       + data.kiirni.includes('UE06088') + data.kiirni.includes('UE02189')
+       + data.kiirni.includes('UE02439') + data.kiirni.includes('UE02471')
+       + data.kiirni.includes('UE03591') + data.kiirni.includes('UE04881')
+       + data.kiirni.includes('UE04912') + data.kiirni.includes('UE06307')
+       + data.kiirni.includes('UE06403') + data.kiirni.includes('UE01856')
+       + data.kiirni.includes('UE03495') + data.kiirni.includes('UE04250')
+       + data.kiirni.includes('UE03239') + data.kiirni.includes('UE03863')
+       + data.kiirni.includes('UE08379') + data.kiirni.includes('UE00399')
+       + data.kiirni.includes('UE00405') + data.kiirni.includes('UE00464')
+       + data.kiirni.includes('UE00636') + data.kiirni.includes('UE00748')
+       + data.kiirni.includes('UE00895') + data.kiirni.includes('UE01347')
+       + data.kiirni.includes('UE01375') + data.kiirni.includes('UE01572')
+       + data.kiirni.includes('UE01596') + data.kiirni.includes('UE01751')
+       + data.kiirni.includes('UE01871') + data.kiirni.includes('UE01902')
+       + data.kiirni.includes('UE02114') + data.kiirni.includes('UE02155')
+       + data.kiirni.includes('UE02203') + data.kiirni.includes('UE02238')
+       + data.kiirni.includes('UE02418') + data.kiirni.includes('UE02450')
+       + data.kiirni.includes('UE02483') + data.kiirni.includes('UE02519')
+       + data.kiirni.includes('UE03222') + data.kiirni.includes('UE03719')
+       + data.kiirni.includes('UE03752') + data.kiirni.includes('UE03786')
+       + data.kiirni.includes('UE03815') + data.kiirni.includes('UE03847')
+       + data.kiirni.includes('UE03887') + data.kiirni.includes('UE03918')
+       + data.kiirni.includes('UE03950') + data.kiirni.includes('UE03994')
+       + data.kiirni.includes('UE04028') + data.kiirni.includes('UE04068')
+       + data.kiirni.includes('UE04107') + data.kiirni.includes('UE01121')
+       + data.kiirni.includes('UE04852') + data.kiirni.includes('UE05655')
+       + data.kiirni.includes('UE00333') + data.kiirni.includes('UE02285')
+       + data.kiirni.includes('UE03018') + data.kiirni.includes('UE03097')
+       + data.kiirni.includes('UE03252') + data.kiirni.includes('UE03303')
+       + data.kiirni.includes('UE03614');
     });
     displayDatas(szukitettDatas);
   });
   szerzoAA.addEventListener('click', (e) => {
     const szukitettDatas = ujEletDatas.filter( data => {
-      return data.kiirni.toLowerCase().includes('<strong>á');
+      return data.kiirni.includes('UE00806') + data.kiirni.includes('UE06838')
+       + data.kiirni.includes('UE06371') + data.kiirni.includes('UE01157')
+       + data.kiirni.includes('UE01309') + data.kiirni.includes('UE01267')
+       + data.kiirni.includes('UE02422') + data.kiirni.includes('UE03305')
+       + data.kiirni.includes('UE08048') + data.kiirni.includes('UE08119')
+       + data.kiirni.includes('UE08152') + data.kiirni.includes('UE08344')
+       + data.kiirni.includes('UE07474');
     });
     displayDatas(szukitettDatas);
   });
@@ -389,11 +466,12 @@ $(document).ready(function() {
               data.kiirni += ', ' + data.megjegyzes;
             }
 
+            data.kiirni += '<!--' + data.kod + '-->';
+
 
               return `
-              <li class="data"><!--${data.kod}-->
+              <li class="data" id=${data.kod}>
                   <p>${data.kiirni}</p>
-
               </li>
           `;
           })
