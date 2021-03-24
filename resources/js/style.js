@@ -3,6 +3,7 @@ $(document).ready(function() {
   const dataList = document.getElementById('dataList');
   let ujEletDatas = [];
   let szerzomutatoDatas = [];
+  let nevmutatoDatas = [];
 
   const loadDatas = async () => {
       try {
@@ -16,11 +17,18 @@ $(document).ready(function() {
       try {
           const res1 = await fetch('szerzomutato.json');
           szerzomutatoDatas = await res1.json();
-          //displaySzerzoDatas(szerzomutatoDatas);
+      } catch (err) {
+          console.error(err);
+      }
+
+      try {
+          const res1 = await fetch('nevmutato.json');
+          nevmutatoDatas = await res1.json();
       } catch (err) {
           console.error(err);
       }
   };
+
 
   const displayDatas = (datas) => {
       const htmlString = datas
@@ -73,20 +81,33 @@ $(document).ready(function() {
       dataList.innerHTML = htmlString;
   };
 
+
   const displaySzerzoDatas = (datas) => {
       const htmlString = datas
           .map((data) => {
 
-            data.kiirni = data.szerzoMutato;
-
             return `
-            <li class="data" id=${data.kod}>
-                <p>${data.kiirni}</p>
+            <li class="data">
+                <p><a href="#">${data.szerzoMutato}</a></p>
             </li>
         `;
         })
         .join('');
     dataList.innerHTML = htmlString;
+};
+
+const displayNevDatas = (datas) => {
+    const htmlString = datas
+        .map((data) => {
+
+          return `
+          <li class="data">
+              <p><a href="#">${data.nevMutato}</a></p>
+          </li>
+      `;
+      })
+      .join('');
+  dataList.innerHTML = htmlString;
 };
 
 //Szukites év szerint
@@ -211,15 +232,7 @@ $(document).ready(function() {
   const szerzoV = document.getElementById('szerzoV');
   const szerzoW = document.getElementById('szerzoW');
   const szerzoZ = document.getElementById('szerzoZ');
-  const szerzoIsmeretlen = document.getElementById('szerzoIsmeretlen');
   const szerzoAll = document.getElementById('szerzoAll');
-
-  szerzoAll.addEventListener('click', (e) => {
-    const szukitettDatas = szerzomutatoDatas.filter( data => {
-      return data.szerzoMutato;
-    });
-    displaySzerzoDatas(szukitettDatas);
-  });
 
   szerzoA.addEventListener('click', (e) => {
     const szukitettDatas = szerzomutatoDatas.filter( data => {
@@ -420,8 +433,255 @@ $(document).ready(function() {
     });
     displaySzerzoDatas(szukitettDatas);
   });
+  szerzoAll.addEventListener('click', (e) => {
+    const szukitettDatas = szerzomutatoDatas.filter( data => {
+      return data.szerzoMutato;
+    });
+    displaySzerzoDatas(szukitettDatas);
+  });
 
 
+//Szukites nev szerint
+
+const nevA = document.getElementById('nevA');
+const nevAA = document.getElementById('nevAA');
+const nevB = document.getElementById('nevB');
+const nevC = document.getElementById('nevC');
+const nevD = document.getElementById('nevD');
+const nevE = document.getElementById('nevE');
+const nevEE = document.getElementById('nevEE');
+const nevF = document.getElementById('nevF');
+const nevG = document.getElementById('nevG');
+const nevH = document.getElementById('nevH');
+const nevI = document.getElementById('nevI');
+const nevII = document.getElementById('nevII');
+const nevJ = document.getElementById('nevJ');
+const nevK = document.getElementById('nevK');
+const nevL = document.getElementById('nevL');
+const nevM = document.getElementById('nevM');
+const nevN = document.getElementById('nevN');
+const nevO = document.getElementById('nevO');
+const nevOO = document.getElementById('nevOO');
+const nevOOO = document.getElementById('nevOOO');
+const nevOOOO = document.getElementById('nevOOOO');
+const nevP = document.getElementById('nevP');
+const nevQ = document.getElementById('nevQ');
+const nevR = document.getElementById('nevR');
+const nevS = document.getElementById('nevS');
+const nevT = document.getElementById('nevT');
+const nevU = document.getElementById('nevU');
+const nevUU = document.getElementById('nevUU');
+const nevUUU = document.getElementById('nevUUU');
+const nevUUUU = document.getElementById('nevUUUU');
+const nevV = document.getElementById('nevV');
+const nevW = document.getElementById('nevW');
+const nevZ = document.getElementById('nevZ');
+const nevAll = document.getElementById('nevAll');
+
+nevA.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('a');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevAA.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('á');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevB.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('b');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevC.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('c');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevD.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('d');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevE.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('e');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevEE.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('é');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevF.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('f');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevG.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('g');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevH.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('h');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevI.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('i');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevII.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('í');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevJ.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('j');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevK.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('k');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevL.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('l');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevM.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('m');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevN.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('n');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevO.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('o');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevOO.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('ó');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevOOO.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('ö');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevOOOO.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('ő');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevP.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('p');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevQ.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('q');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevR.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('r');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevS.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('s');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevT.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('t');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevU.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('u');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevUU.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('ú');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevUUU.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('ü');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevUUUU.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('ű');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevV.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('v');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevW.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('w');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevZ.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato.toLowerCase().startsWith('z');
+  });
+  displayNevDatas(szukitettDatas);
+});
+nevAll.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato;
+  });
+  displayNevDatas(szukitettDatas);
+});
 
   //Kereses
 
