@@ -4,6 +4,7 @@ $(document).ready(function() {
   let ujEletDatas = [];
   let szerzomutatoDatas = [];
   let nevmutatoDatas = [];
+  let targymutatoDatas = [];
 
   const loadDatas = async () => {
       try {
@@ -24,6 +25,13 @@ $(document).ready(function() {
       try {
           const res1 = await fetch('nevmutato.json');
           nevmutatoDatas = await res1.json();
+      } catch (err) {
+          console.error(err);
+      }
+
+      try {
+          const res1 = await fetch('targymutato.json');
+          targymutatoDatas = await res1.json();
       } catch (err) {
           console.error(err);
       }
@@ -103,6 +111,20 @@ const displayNevDatas = (datas) => {
           return `
           <li class="data">
               <p><a href="#">${data.nevMutato}</a></p>
+          </li>
+      `;
+      })
+      .join('');
+  dataList.innerHTML = htmlString;
+};
+
+const displayTargyDatas = (datas) => {
+    const htmlString = datas
+        .map((data) => {
+
+          return `
+          <li class="data">
+              <p><a href="#">${data.targyMutato}</a></p>
           </li>
       `;
       })
@@ -675,6 +697,248 @@ nevZ.addEventListener('click', (e) => {
     return data.nevMutato.toLowerCase().startsWith('z');
   });
   displayNevDatas(szukitettDatas);
+});
+nevAll.addEventListener('click', (e) => {
+  const szukitettDatas = nevmutatoDatas.filter( data => {
+    return data.nevMutato;
+  });
+  displayNevDatas(szukitettDatas);
+});
+
+//Szukites targy szerint
+
+const targyA = document.getElementById('targyA');
+const targyAA = document.getElementById('targyAA');
+const targyB = document.getElementById('targyB');
+const targyC = document.getElementById('targyC');
+const targyD = document.getElementById('targyD');
+const targyE = document.getElementById('targyE');
+const targyEE = document.getElementById('targyEE');
+const targyF = document.getElementById('targyF');
+const targyG = document.getElementById('targyG');
+const targyH = document.getElementById('targyH');
+const targyI = document.getElementById('targyI');
+const targyII = document.getElementById('targyII');
+const targyJ = document.getElementById('targyJ');
+const targyK = document.getElementById('targyK');
+const targyL = document.getElementById('targyL');
+const targyM = document.getElementById('targyM');
+const targyN = document.getElementById('targyN');
+const targyO = document.getElementById('targyO');
+const targyOO = document.getElementById('targyOO');
+const targyOOO = document.getElementById('targyOOO');
+const targyOOOO = document.getElementById('targyOOOO');
+const targyP = document.getElementById('targyP');
+const targyQ = document.getElementById('targyQ');
+const targyR = document.getElementById('targyR');
+const targyS = document.getElementById('targyS');
+const targyT = document.getElementById('targyT');
+const targyU = document.getElementById('targyU');
+const targyUU = document.getElementById('targyUU');
+const targyUUU = document.getElementById('targyUUU');
+const targyUUUU = document.getElementById('targyUUUU');
+const targyV = document.getElementById('targyV');
+const targyW = document.getElementById('targyW');
+const targyZ = document.getElementById('targyZ');
+const targyAll = document.getElementById('targyAll');
+
+targyA.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('a');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyAA.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('á');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyB.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('b');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyC.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('c');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyD.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('d');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyE.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('e');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyEE.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('é');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyF.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('f');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyG.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('g');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyH.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('h');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyI.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('i');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyII.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('í');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyJ.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('j');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyK.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('k');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyL.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('l');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyM.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('m');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyN.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('n');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyO.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('o');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyOO.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('ó');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyOOO.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('ö');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyOOOO.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('ő');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyP.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('p');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyQ.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('q');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyR.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('r');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyS.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('s');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyT.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('t');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyU.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('u');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyUU.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('ú');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyUUU.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('ü');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyUUUU.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('ű');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyV.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('v');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyW.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('w');
+  });
+  displayTargyDatas(szukitettDatas);
+});
+targyZ.addEventListener('click', (e) => {
+  const szukitettDatas = targymutatoDatas.filter( data => {
+    return data.targyMutato.toLowerCase().startsWith('z');
+  });
+  displayTargyDatas(szukitettDatas);
 });
 nevAll.addEventListener('click', (e) => {
   const szukitettDatas = nevmutatoDatas.filter( data => {
