@@ -63,10 +63,6 @@ input {
 }
 
 
-p {
-  border-top: 1px solid black;
-  padding: 15px;
-}
 
 .szerzok {
   background-color: white;
@@ -105,4 +101,21 @@ p {
 .szukites h4 {
   display: inline-block;
   margin-right: 25px;
+}
+
+
+#dataList a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#dataList li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
 }
