@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+p {
+  border: 1px solid black;
+  padding: 24px;
+}
+
+p:first-child {
+  border-top: none;
+}
+
+p:last-child {
+  border-bottom: none;
+}
+
+p:hover {
+  background-color: orangered;
+}
