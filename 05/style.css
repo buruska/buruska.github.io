@@ -1,0 +1,23 @@
+main {
+  border: 4px solid #4285f4;
+  width: 300px;
+  margin: 5px;
+}
+
+p {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+  font-weight: bold;
+  font-family: "Baloo Tammudu 2", cursive;
+  font-size: 24px;
+}
+
+.red {
+  background: #e67676;
+}
+
+.green {
+  background: #a9e6e6;
+}

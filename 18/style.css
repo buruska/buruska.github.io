@@ -1,0 +1,146 @@
+/* 
+font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif; 
+
+ #2c3e50, silver
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: #333;
+}
+
+.container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background: #2c3e50;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  height: 50px;
+  align-items: center;
+}
+
+a:link,
+a:visited {
+  color: silver;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+a:hover,
+a:active {
+  color: white;
+}
+
+main {
+  padding-top: 50px;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+
+.section-hero h1,
+.section-hero h2 {
+  font-family: "Lobster", cursive;
+  color: #2c3e50;
+  padding-left: 10%;
+}
+
+.anakin-photo {
+  background-image: url("https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.transform-text {
+  transform: translate(25%, 0);
+}
+
+.anakin-photo h2 {
+  padding-top: 40%;
+  padding-left: 10%;
+}
+
+.anakin-photo h1 {
+  font-size: 64px;
+}
+
+.anakin-text {
+  padding: 24px;
+  line-height: 1.5;
+}
+
+.anakin-text ul {
+  padding: 24px 32px;
+}
+
+.section-achievments {
+  margin-top: 32px;
+}
+
+blockquote {
+  background: #2c3e50;
+  color: silver;
+  font-family: "Lobster", cursive;
+  padding: 56px 48px;
+  font-size: 56px;
+  position: relative;
+}
+
+blockquote::before {
+  content: "”";
+  position: absolute;
+  top: -78px;
+  left: 5px;
+  transform: rotate(180deg);
+  font-size: 110px;
+}
+
+.main-text {
+  padding: 32px 24px;
+}
+
+.main-text h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+}
+
+.main-text h3 {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.main-text h4 {
+  margin-top: 0;
+}
+
+.main-text p {
+  line-height: 1.5;
+}
+
+.main-text ul {
+  margin-top: 24px;
+  margin-left: 40px;
+  line-height: 1.5;
+}

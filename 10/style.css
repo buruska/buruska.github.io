@@ -1,0 +1,12 @@
+a {
+  display: block;
+  margin: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Sen", sans-serif;
+  color: green;
+}
+
+a:hover {
+  color: lime;
+  text-decoration: none;
+}

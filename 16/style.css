@@ -1,0 +1,49 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  height: 200px;
+  background: aqua;
+}
+
+section {
+  height: 800px;
+  display: flex;
+  gap: 20px;
+}
+
+aside {
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 4;
+  background: red;
+  height: 800px;
+  position: relative;
+}
+
+.blackbox {
+  width: 50px;
+  height: 50px;
+  background: black;
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.orange {
+  background: orange;
+}
+
+.purple {
+  background: purple;
+}
+
+footer {
+  height: 200px;
+  background: blue;
+}

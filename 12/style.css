@@ -1,0 +1,21 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Sen", sans-serif;
+}
+
+div {
+  display: flex;
+}
+
+section {
+  width: 200px;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+}
+
+a {
+  display: block;
+}

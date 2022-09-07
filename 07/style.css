@@ -1,0 +1,26 @@
+label,
+input,
+button {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  border: 3px solid lime;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+button {
+  background: lime;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+}

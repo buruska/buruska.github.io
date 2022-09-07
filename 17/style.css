@@ -1,0 +1,122 @@
+/* 
+fejléc és idézetek: ‘Abril Fatface’ font, #222 grey
+bekezdések: ‘Josefin Sans’ font, #222 grey
+feliratok: ‘Merriweather’ font, 15px, italic
+
+font-family: 'Abril Fatface', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Merriweather', serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  /*   box-sizing: border-box; */
+}
+
+header {
+  border-top: 4px #222 solid;
+  width: 1278px;
+  height: 402px;
+  background-image: url("https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png");
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2 {
+  font-family: "Abril Fatface", cursive;
+  color: #222;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 80px;
+  margin-top: -20px;
+}
+
+header h2 {
+  padding-top: 230px;
+  font-size: 40px;
+}
+
+section {
+  margin-top: 64px;
+}
+
+p,
+ul {
+  font-family: "Josefin Sans", sans-serif;
+  color: #222;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+ul {
+  margin: 30px 50px;
+}
+
+blockquote {
+  background-color: #444;
+  color: white;
+  font-family: "Abril Fatface", cursive;
+  font-size: 48px;
+  padding: 40px 64px;
+  position: relative;
+  width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+}
+
+blockquote::before {
+  content: "”";
+  position: absolute;
+  top: -78px;
+  left: 0;
+  transform: rotate(180deg);
+  font-size: 110px;
+}
+
+section h2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 64px;
+}
+
+section h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+section h4 {
+  font-family: "Merriweather", serif;
+  margin-top: -36px;
+}
+
+section p,
+section ul {
+  font-size: 18px;
+  margin-bottom: 48px;
+}
+
+footer {
+  border-top: 4px #222 solid;
+}
+
+footer h2 {
+  margin-top: 64px;
+}
