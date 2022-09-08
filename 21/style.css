@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 1000px;
+  height: 125px;
+  border: 1px solid cornflowerblue;
+  margin: 50px auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  background-color: cornflowerblue;
+}
+
+.container-second {
+  background-color: orangered;
+}
+
+.container-second .box {
+  background-color: purple;
+}
